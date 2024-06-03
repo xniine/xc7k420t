@@ -1,12 +1,13 @@
 
-An experiment to make fpga as Virtio NIC with virtio_net driver
+## An experiment to make FPGA as Virtio NIC with virtio_net driver
 
 As title, this one is a virtio nic implementation works with
 - virtio_net driver in linux
 - virtio driver in dpdk
 
-Also, MMIO is not tested, only MSI-X interrput is supported
-The testing is done on PCIe 2.0 on Intel Celeron N3350 (on a zimaBoard)
+Also,
+- only MSI-X interrput is supported.
+- MMIO is not tested, (maybe not working).
 
-The reference FPGA board is purchased from taobao
+The testing is done on PCIe 2.0 on Intel Celeron N3350 (on a zimaBoard)
 
