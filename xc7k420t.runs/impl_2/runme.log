@@ -1,0 +1,1509 @@
+
+*** Running vivado
+    with args -log top.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: link_design -top top -part xc7k420tffg901-2L
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_0_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.dcp' for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.dcp' for cell 'gtx_wrapper_inst/gtwizard_0'
+INFO: [Netlist 29-17] Analyzing 4562 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k420tffg901-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: ila_0_inst UUID: d8923df3-e0ca-58ef-8f94-7de50e816f31 
+Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst'
+Finished Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst'
+Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtx_wrapper_inst/gtwizard_0/inst'
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:72]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:75]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:84]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:87]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:96]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:99]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:108]
+WARNING: [Vivado 12-2489] -period contains time 3.103030 which will be rounded to 3.103 to ensure it is an integer multiple of 1 picosecond [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc:111]
+Finished Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xdc] for cell 'gtx_wrapper_inst/gtwizard_0/inst'
+Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_0_inst/inst'
+Finished Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'ila_0_inst/inst'
+Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0_inst/inst'
+Finished Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0_inst/inst'
+Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/constrs_1/new/top.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/constrs_1/new/top.xdc:225]
+INFO: [Timing 38-2] Deriving generated clocks [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/constrs_1/new/top.xdc:225]
+get_clocks: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 2713.434 ; gain = 655.586 ; free physical = 4059 ; free virtual = 12462
+Finished Parsing XDC File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/constrs_1/new/top.xdc]
+Sourcing Tcl File [/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/pl_received_hot_rst_cdc'
+Finished Sourcing Tcl File [/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/pl_received_hot_rst_cdc'
+Sourcing Tcl File [/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/phy_lnk_up_cdc'
+Finished Sourcing Tcl File [/home/ubuntu/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/phy_lnk_up_cdc'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2715.434 ; gain = 0.000 ; free physical = 4202 ; free virtual = 12607
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2521 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 2428 instances
+  RAM16X1S => RAM32X1S (RAMS32): 5 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 88 instances
+
+13 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:01:02 ; elapsed = 00:00:59 . Memory (MB): peak = 2715.434 ; gain = 1346.988 ; free physical = 4202 ; free virtual = 12607
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420t'
+Parsing TCL File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/tcl/v7ht.tcl] from IP /home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/gtwizard_0.xci
+Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/tcl/v7ht.tcl]
+
+****************************************************************************************
+*  WARNING: This script only supports the xc7vh290t, xc7vh580t and xc7vh870t devices.  *
+*           Your current part is xc7k420t.                                            *
+****************************************************************************************
+
+Finished Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/gtwizard_0/tcl/v7ht.tcl]
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2787.469 ; gain = 64.031 ; free physical = 4168 ; free virtual = 12583
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 116d833b5
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 2787.469 ; gain = 0.000 ; free physical = 4061 ; free virtual = 12480
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-220] Re-using generated and synthesized IP, "xilinx.com:ip:xsdbm:3.0", from Vivado IP cache entry "e6ebf2c8a6c92ecc".
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2804.523 ; gain = 1.000 ; free physical = 3873 ; free virtual = 12393
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 1564ac927
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 2804.523 ; gain = 17.055 ; free physical = 3864 ; free virtual = 12384
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 1959547d4
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:39 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3922 ; free virtual = 12442
+INFO: [Opt 31-389] Phase Retarget created 138 cells and removed 198 cells
+INFO: [Opt 31-1021] In phase Retarget, 197 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 1c4d01b74
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3955 ; free virtual = 12475
+INFO: [Opt 31-389] Phase Constant propagation created 7 cells and removed 384 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 173 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 21821b823
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3949 ; free virtual = 12469
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1291 cells
+INFO: [Opt 31-1021] In phase Sweep, 1373 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 21821b823
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:42 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3982 ; free virtual = 12502
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+Phase 6 Shift Register Optimization | Checksum: 1b2918377
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3953 ; free virtual = 12474
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 1b2918377
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3953 ; free virtual = 12474
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 64 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             138  |             198  |                                            197  |
+|  Constant propagation         |               7  |             384  |                                            173  |
+|  Sweep                        |               0  |            1291  |                                           1373  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             64  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2837.195 ; gain = 0.000 ; free physical = 3953 ; free virtual = 12474
+Ending Logic Optimization Task | Checksum: 1b2918377
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:44 . Memory (MB): peak = 2837.195 ; gain = 49.727 ; free physical = 3954 ; free virtual = 12474
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.730 | TNS=0.000 |
+INFO: [Power 33-23] Power model is not available for startup_inst
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 143 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 152 newly gated: 3 Total Ports: 286
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 20b221d03
+
+Time (s): cpu = 00:00:00.44 ; elapsed = 00:00:00.46 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3790 ; free virtual = 12317
+Ending Power Optimization Task | Checksum: 20b221d03
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:13 . Memory (MB): peak = 3831.754 ; gain = 994.559 ; free physical = 3883 ; free virtual = 12409
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1f340a764
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3857 ; free virtual = 12383
+Ending Final Cleanup Task | Checksum: 1f340a764
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3855 ; free virtual = 12381
+Parsing TCL File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl] from IP /home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci
+Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl]
+**** INFO: BSCAN Primitives were found: dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst ****
+INFO: [Vivado 12-3520] Assignment of 'SERIES7_BSCAN.bscan_inst' to a pblock 'bscan_pblock_boot' means that all children of 'SWITCH_N_EXT_BSCAN.bscan_inst' are in the pblock. Changing the pblock assignment to 'SWITCH_N_EXT_BSCAN.bscan_inst'. [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl:345]
+CRITICAL WARNING: [Common 17-1548] Command failed: Error: The following primitive must be added to a stage1 PBLOCK
+         Cell "eth_virtio_wrapper_inst/pipe_pclk_s1_q[0]_i_1" of Type "LUT.others.LUT6"
+       This should be done in the user constraints file through the
+       following commands
+         set custom_pblock [create_pblock <pblock name>]
+         set_property BOOT_BLOCK 1 $custom_pblock
+         resize_pblock -add <site> $custom_pblock
+         add_cells_to_pblock $custom_pblock [get_cells <primitive name>]
+ [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl:463]
+Finished Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_build_stage1.tcl]
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3781 ; free virtual = 12308
+Ending Netlist Obfuscation Task | Checksum: 1f340a764
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3755 ; free virtual = 12281
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 8 Warnings, 1 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:02:02 ; elapsed = 00:01:13 . Memory (MB): peak = 3831.754 ; gain = 1116.320 ; free physical = 3755 ; free virtual = 12281
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3755 ; free virtual = 12281
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3752 ; free virtual = 12281
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3694 ; free virtual = 12256
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3715 ; free virtual = 12264
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CFGBVS-7] CONFIG_VOLTAGE with Config Bank VCCO: The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 3.30.  However, the CONFIG_VOLTAGE for current_design is set to 2.5. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: R30 (IO_L1P_T0_D00_MOSI_14), T30 (IO_L1N_T0_D01_DIN_14), R28 (IO_L2P_T0_D02_14), T28 (IO_L2N_T0_D03_14), V29 (IO_L3P_T0_DQS_PUDC_B_14), and V26 (IO_L6P_T0_FCS_B_14)
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[6] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[7] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[0] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[1] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[2] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[3] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2/ENBWREN (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_axis_tready) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/ENARDEN (net: ila_cache_inst/valid) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/RSTRAMB (net: ila_cache_inst/index[10]_i_1_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 38 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3700 ; free virtual = 12252
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1263ae35b
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3700 ; free virtual = 12252
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3700 ; free virtual = 12252
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-568] A LUT 'genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3' is driving clock pin of 779 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[0] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[10] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[11] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[12] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__1' is driving clock pin of 17 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg {FDRE}
+	genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg {FDRE}
+	genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0] {FDRE}
+	genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1] {FDRE}
+	genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__2' is driving clock pin of 763 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[0] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[10] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[11] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[12] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/slip_count_reg[4]_i_4' is driving clock pin of 1095 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/m_axis_tdata_reg_reg[0] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/m_axis_tdata_reg_reg[100] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/m_axis_tdata_reg_reg[101] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/m_axis_tdata_reg_reg[102] {FDRE}
+	genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/m_axis_tdata_reg_reg[103] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__0' is driving clock pin of 763 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[0] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[10] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[11] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[12] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/m_axis_tdata_reg_reg[13] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__0' is driving clock pin of 17 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg {FDRE}
+	genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg {FDRE}
+	genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1] {FDRE}
+	genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2] {FDRE}
+WARNING: [Place 30-568] A LUT 'genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__1' is driving clock pin of 763 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/m_axis_tvalid_reg_reg {FDRE}
+	genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/m_rst_sync1_reg_reg {FDPE}
+	genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_read_data_valid_reg_reg {FDRE}
+	genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/m_rst_sync2_reg_reg {FDPE}
+	genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/m_rst_sync3_reg_reg {FDPE}
+WARNING: [Place 30-568] A LUT 'genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__2' is driving clock pin of 17 registers. This could lead to large hold time violations. First few involved registers are:
+	genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg {FDRE}
+	genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg {FDRE}
+	genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1] {FDRE}
+	genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2] {FDRE}
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    PCIE_RXN_IBUF[0]_inst
+    PCIE_RXP_IBUF[0]_inst
+    PCIE_TXN_OBUF[0]_inst
+    PCIE_TXP_OBUF[0]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    PCIE_TXN_OBUF[1]_inst
+    PCIE_RXN_IBUF[1]_inst
+    PCIE_RXP_IBUF[1]_inst
+    PCIE_TXP_OBUF[1]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    PCIE_RXN_IBUF[2]_inst
+    PCIE_RXP_IBUF[2]_inst
+    PCIE_TXN_OBUF[2]_inst
+    PCIE_TXP_OBUF[2]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_7x_0_main_pblock_boot
+Instance constrained to exclude pblock:
+    eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i
+Instance(s) not constrained to exclude pblock:
+    PCIE_RXP_IBUF[3]_inst
+    PCIE_RXN_IBUF[3]_inst
+    PCIE_TXN_OBUF[3]_inst
+    PCIE_TXP_OBUF[3]_inst
+
+WARNING: [Place 30-781] Some instances may violate an exclude pblock as they constitute a macro with another instance that belongs to the exclude pblock.
+Exclude pblock: pcie_refclk_ibuf_pblock_boot
+Instance constrained to exclude pblock:
+    pcie_refclk_ibuf
+Instance(s) not constrained to exclude pblock:
+    PCIE_CLK_N_IBUF_inst
+    PCIE_CLK_P_IBUF_inst
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: f70efbb8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3697 ; free virtual = 12254
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14826c15d
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3478 ; free virtual = 12036
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14826c15d
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3478 ; free virtual = 12036
+Phase 1 Placer Initialization | Checksum: 14826c15d
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:13 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3478 ; free virtual = 12036
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 179b17d75
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:16 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3402 ; free virtual = 11960
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-81] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out. Replicated 6 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 6 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 6 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3306 ; free virtual = 11866
+INFO: [Physopt 32-64] No nets found for fanout-optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3308 ; free virtual = 11869
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            6  |              0  |                     1  |           0  |           1  |  00:00:07  |
+|  Fanout                        |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |            6  |              0  |                     1  |           0  |           6  |  00:00:07  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 11a038ac4
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:01:10 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3309 ; free virtual = 11870
+Phase 2 Global Placement | Checksum: fe3e7c07
+
+Time (s): cpu = 00:02:50 ; elapsed = 00:01:12 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3353 ; free virtual = 11914
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: fe3e7c07
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:01:12 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3379 ; free virtual = 11940
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: fb91449e
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:01:20 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3359 ; free virtual = 11920
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1afbf722b
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:21 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3336 ; free virtual = 11898
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 193430a8f
+
+Time (s): cpu = 00:03:15 ; elapsed = 00:01:21 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3335 ; free virtual = 11897
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 12677fd7e
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:01:30 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3320 ; free virtual = 11894
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 617e4733
+
+Time (s): cpu = 00:03:56 ; elapsed = 00:01:47 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3211 ; free virtual = 11794
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: f3a40c84
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:50 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3234 ; free virtual = 11802
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 151cf49e9
+
+Time (s): cpu = 00:03:58 ; elapsed = 00:01:50 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3234 ; free virtual = 11803
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1b3fa7d78
+
+Time (s): cpu = 00:04:23 ; elapsed = 00:02:00 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3257 ; free virtual = 11822
+Phase 3 Detail Placement | Checksum: 1b3fa7d78
+
+Time (s): cpu = 00:04:23 ; elapsed = 00:02:01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3230 ; free virtual = 11798
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 247db0173
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-33] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/virtio_reset_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net eth_virtio_wrapper_inst/eth_virtio_completer_inst/vio_queue_msix_vector[0][15]_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 247db0173
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:02:07 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3289 ; free virtual = 11861
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.075. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 2678e2a36
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:26 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3216 ; free virtual = 11794
+Phase 4.1 Post Commit Optimization | Checksum: 2678e2a36
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:26 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3244 ; free virtual = 11831
+Post Placement Optimization Initialization | Checksum: 16f7042bd
+INFO: [Place 46-33] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/virtio_reset_reg_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net eth_virtio_wrapper_inst/eth_virtio_completer_inst/vio_queue_msix_vector[0][15]_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-46] BUFG insertion identified 2 candidate nets, 0 success, 0 bufg driver replicated, 2 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.018. For the most accurate timing information please run report_timing.
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 18010f8d1
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:02:55 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3008 ; free virtual = 11722
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 18010f8d1
+
+Time (s): cpu = 00:06:40 ; elapsed = 00:02:55 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3007 ; free virtual = 11722
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3007 ; free virtual = 11722
+Phase 4.4 Final Placement Cleanup | Checksum: 111501484
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:02:55 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3009 ; free virtual = 11724
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 111501484
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:02:56 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3010 ; free virtual = 11726
+Ending Placer Task | Checksum: 6ff9a86a
+
+Time (s): cpu = 00:06:41 ; elapsed = 00:02:56 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3132 ; free virtual = 11849
+INFO: [Common 17-83] Releasing license: Implementation
+89 Infos, 59 Warnings, 1 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:06:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3132 ; free virtual = 11849
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3132 ; free virtual = 11849
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3052 ; free virtual = 11828
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:03 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2892 ; free virtual = 11811
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3043 ; free virtual = 11823
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3025 ; free virtual = 11805
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.15 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 3039 ; free virtual = 11820
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2976 ; free virtual = 11757
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.018 | TNS=-0.018 |
+Phase 1 Physical Synthesis Initialization | Checksum: ade23c14
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:05 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2887 ; free virtual = 11667
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.018 | TNS=-0.018 |
+
+Phase 2 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 1 candidate net for fanout optimization.
+INFO: [Physopt 32-572] Net eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_tlp_rc_inst/E[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2802 ; free virtual = 11655
+Phase 2 Fanout Optimization | Checksum: ade23c14
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:07 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2802 ; free virtual = 11655
+
+Phase 3 Placement Based Optimization
+INFO: [Physopt 32-660] Identified 6 candidate nets for placement-based optimization.
+INFO: [Physopt 32-663] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_rate.pipe_rate_i/pipe_pclk_sel_out[0].  Re-placed instance eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_rate.pipe_rate_i/pclk_sel_reg
+INFO: [Physopt 32-662] Processed net eth_virtio_wrapper_inst/pipe_pclk_s1_q[0]_i_1_n_0.  Did not re-place instance eth_virtio_wrapper_inst/pipe_pclk_s1_q[0]_i_1
+INFO: [Physopt 32-662] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_pipe_clock_inst/pipe_pclk_s1_q_reg[0]_0[0].  Did not re-place instance eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_pipe_clock_inst/pipe_pclk_s1_q_reg[0]
+INFO: [Physopt 32-662] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_rate.pipe_rate_i/pipe_pclk_sel_out[0].  Did not re-place instance eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].pipe_rate.pipe_rate_i/pclk_sel_reg
+INFO: [Physopt 32-663] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].pipe_rate.pipe_rate_i/pipe_pclk_sel_out[0].  Re-placed instance eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].pipe_rate.pipe_rate_i/pclk_sel_reg
+INFO: [Physopt 32-662] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].pipe_rate.pipe_rate_i/pipe_pclk_sel_out[0].  Did not re-place instance eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].pipe_rate.pipe_rate_i/pclk_sel_reg
+INFO: [Physopt 32-661] Optimized 2 nets.  Re-placed 2 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 2 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 2 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.050 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2781 ; free virtual = 11652
+Phase 3 Placement Based Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2773 ; free virtual = 11651
+
+Phase 4 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 4 MultiInst Placement Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11651
+
+Phase 5 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 5 Rewire | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11651
+
+Phase 6 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 6 Critical Cell Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11651
+
+Phase 7 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11651
+Phase 7 Fanout Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11651
+
+Phase 8 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2771 ; free virtual = 11651
+Phase 8 Placement Based Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2771 ; free virtual = 11651
+
+Phase 9 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 9 MultiInst Placement Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2771 ; free virtual = 11651
+
+Phase 10 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 10 Rewire | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2770 ; free virtual = 11651
+
+Phase 11 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 11 Critical Cell Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2770 ; free virtual = 11651
+
+Phase 12 Slr Crossing Optimization
+Phase 12 Slr Crossing Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2779 ; free virtual = 11650
+
+Phase 13 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2779 ; free virtual = 11649
+Phase 13 Fanout Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2779 ; free virtual = 11649
+
+Phase 14 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2778 ; free virtual = 11649
+Phase 14 Placement Based Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2778 ; free virtual = 11649
+
+Phase 15 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 15 MultiInst Placement Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2778 ; free virtual = 11649
+
+Phase 16 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 16 Rewire | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2777 ; free virtual = 11649
+
+Phase 17 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 17 Critical Cell Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2776 ; free virtual = 11649
+
+Phase 18 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 18 DSP Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2776 ; free virtual = 11649
+
+Phase 19 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 19 BRAM Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2776 ; free virtual = 11649
+
+Phase 20 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 20 URAM Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2775 ; free virtual = 11649
+
+Phase 21 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 21 Shift Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2774 ; free virtual = 11649
+
+Phase 22 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 22 DSP Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2774 ; free virtual = 11649
+
+Phase 23 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 23 BRAM Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2773 ; free virtual = 11649
+
+Phase 24 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 24 URAM Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2773 ; free virtual = 11649
+
+Phase 25 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 25 Shift Register Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11649
+
+Phase 26 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 26 Critical Pin Optimization | Checksum: ae07dfa6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:08 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2772 ; free virtual = 11648
+
+Phase 27 Very High Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 16 candidate nets for fanout optimization.
+INFO: [Physopt 32-81] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out. Replicated 5 times.
+INFO: [Physopt 32-81] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_reset.pipe_reset_i/cpllreset. Replicated 3 times.
+INFO: [Physopt 32-572] Net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_config_space_inst/tlp_shr_rx_val1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/virtio_reset_reg_0. Replicated 12 times.
+INFO: [Physopt 32-572] Net eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_tlp_rc_inst/tlp_int_rc_cache[1][127]_i_1_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-81] Processed net eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_vq_packed_cx_inst/vio_int_stat_reg[0]_2. Replicated 1 times.
+INFO: [Physopt 32-572] Net eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_us_axi_master_inst/pcie_us_axi_master_wr_inst/m_axi_awaddr_reg_reg[13]_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 4 nets. Created 21 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 4 nets or cells. Created 21 new cells, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.050 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+Phase 27 Very High Fanout Optimization | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:27 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+
+Phase 28 Placement Based Optimization
+INFO: [Physopt 32-670] No setup violation found.  Placement Based Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+Phase 28 Placement Based Optimization | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:27 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+
+Phase 29 MultiInst Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  MultiInst Placement Optimization was not performed.
+Phase 29 MultiInst Placement Optimization | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:00:27 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+
+Phase 30 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.050 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.050 | TNS=0.000 |
+Phase 30 Critical Path Optimization | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:27 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11631
+
+Phase 31 BRAM Enable Optimization
+Phase 31 BRAM Enable Optimization | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:00:28 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2521 ; free virtual = 11630
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.050 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization          |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Placement Based       |          0.068  |          0.018  |            0  |              0  |                     2  |           0  |           1  |  00:00:00  |
+|  MultiInst Placement   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire                |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Slr Crossing          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout      |          0.000  |          0.000  |           21  |              0  |                     4  |           0  |           1  |  00:00:19  |
+|  BRAM Enable           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path         |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                 |          0.068  |          0.018  |           21  |              0  |                     6  |           0  |           6  |  00:00:21  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2522 ; free virtual = 11624
+Ending Physical Synthesis Task | Checksum: 16474b52c
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:28 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2522 ; free virtual = 11624
+INFO: [Common 17-83] Releasing license: Implementation
+152 Infos, 59 Warnings, 1 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:11 ; elapsed = 00:00:34 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2584 ; free virtual = 11686
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2562 ; free virtual = 11688
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2483 ; free virtual = 11671
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:10 ; elapsed = 00:00:04 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2406 ; free virtual = 11678
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 2374 ; free virtual = 11520
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CFGBVS-7] CONFIG_VOLTAGE with Config Bank VCCO: The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 3.30.  However, the CONFIG_VOLTAGE for current_design is set to 2.5. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: R30 (IO_L1P_T0_D00_MOSI_14), T30 (IO_L1N_T0_D01_DIN_14), R28 (IO_L2P_T0_D02_14), T28 (IO_L2N_T0_D03_14), V29 (IO_L3P_T0_DQS_PUDC_B_14), and V26 (IO_L6P_T0_FCS_B_14)
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+Checksum: PlaceDB: eda23c37 ConstDB: 0 ShapeSum: 2a1bdd58 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 119c7da77
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:23 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1755 ; free virtual = 11212
+Post Restoration Checksum: NetGraph: 5fd102b3 NumContArr: 832a970c Constraints: 36cc40b8 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 119c7da77
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:26 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1810 ; free virtual = 11248
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 119c7da77
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1727 ; free virtual = 11165
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 119c7da77
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:31 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1727 ; free virtual = 11165
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 229e96071
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:51 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1675 ; free virtual = 11117
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.288  | TNS=0.000  | WHS=-1.137 | THS=-4204.727|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1b378a126
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:57 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1662 ; free virtual = 11113
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.288  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1eb7ef5fa
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:58 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1618 ; free virtual = 11067
+Phase 2 Router Initialization | Checksum: 187a9847e
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:00:59 . Memory (MB): peak = 3831.754 ; gain = 0.000 ; free physical = 1617 ; free virtual = 11067
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 20a96a663
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:01:17 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1629 ; free virtual = 11078
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 21562
+ Number of Nodes with overlaps = 1358
+ Number of Nodes with overlaps = 69
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.735 | TNS=-7.100 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1c94fadb2
+
+Time (s): cpu = 00:05:34 ; elapsed = 00:02:20 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1673 ; free virtual = 11067
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.121 | TNS=-0.738 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 18edac28d
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:02:52 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1621 ; free virtual = 11026
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 882
+ Number of Nodes with overlaps = 209
+ Number of Nodes with overlaps = 85
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.221 | TNS=-0.958 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 2592e897c
+
+Time (s): cpu = 00:06:55 ; elapsed = 00:03:27 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1558 ; free virtual = 11045
+Phase 4 Rip-up And Reroute | Checksum: 2592e897c
+
+Time (s): cpu = 00:06:56 ; elapsed = 00:03:28 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1562 ; free virtual = 11049
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 254cd3af7
+
+Time (s): cpu = 00:07:03 ; elapsed = 00:03:29 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1590 ; free virtual = 11077
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.121 | TNS=-0.738 | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 1d65305cc
+
+Time (s): cpu = 00:07:05 ; elapsed = 00:03:30 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1558 ; free virtual = 11047
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1d65305cc
+
+Time (s): cpu = 00:07:05 ; elapsed = 00:03:30 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1557 ; free virtual = 11047
+Phase 5 Delay and Skew Optimization | Checksum: 1d65305cc
+
+Time (s): cpu = 00:07:05 ; elapsed = 00:03:31 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1537 ; free virtual = 11047
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1f6a10416
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:03:33 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1547 ; free virtual = 11044
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.121 | TNS=-0.738 | WHS=0.014  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 22d4df6ce
+
+Time (s): cpu = 00:07:13 ; elapsed = 00:03:33 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1576 ; free virtual = 11073
+Phase 6 Post Hold Fix | Checksum: 22d4df6ce
+
+Time (s): cpu = 00:07:14 ; elapsed = 00:03:33 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1561 ; free virtual = 11076
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 1c17b3712
+
+Time (s): cpu = 00:07:26 ; elapsed = 00:03:36 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1532 ; free virtual = 11046
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.121 | TNS=-0.738 | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 1c17b3712
+
+Time (s): cpu = 00:07:26 ; elapsed = 00:03:36 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1529 ; free virtual = 11045
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.09274 %
+  Global Horizontal Routing Utilization  = 10.0786 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 84.6847%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 82.8829%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 89.7059%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X70Y282 -> INT_L_X70Y282
+   INT_L_X64Y272 -> INT_L_X64Y272
+   INT_L_X52Y152 -> INT_L_X52Y152
+West Dir 1x1 Area, Max Cong = 95.5882%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X112Y163 -> INT_L_X112Y163
+   INT_L_X112Y162 -> INT_L_X112Y162
+   INT_L_X112Y161 -> INT_L_X112Y161
+   INT_R_X51Y152 -> INT_R_X51Y152
+   INT_R_X41Y109 -> INT_R_X41Y109
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.5 Sparse Ratio: 0.5
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.333333 Sparse Ratio: 0.75
+
+Phase 8 Route finalize | Checksum: 1c17b3712
+
+Time (s): cpu = 00:07:27 ; elapsed = 00:03:37 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1553 ; free virtual = 11071
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1c17b3712
+
+Time (s): cpu = 00:07:27 ; elapsed = 00:03:37 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1558 ; free virtual = 11067
+
+Phase 10 Depositing Routes
+INFO: [Route 35-467] Router swapped GT pin eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y11/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/gtx_common.gtxe2_common_i/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y2/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y10/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[2].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y9/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/gt_top_i/pipe_wrapper_i/pipe_lane[3].gt_wrapper_i/gtx_channel.gtxe2_channel_i/GTREFCLK0 to physical pin GTXE2_CHANNEL_X0Y8/GTREFCLK1
+INFO: [Route 35-467] Router swapped GT pin gtx_wrapper_inst/gtwizard_common_1/gtxe2_common_0/GTREFCLK0 to physical pin GTXE2_COMMON_X0Y5/GTSOUTHREFCLK1
+Phase 10 Depositing Routes | Checksum: 218c96c21
+
+Time (s): cpu = 00:07:31 ; elapsed = 00:03:41 . Memory (MB): peak = 3857.754 ; gain = 26.000 ; free physical = 1547 ; free virtual = 11068
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3857.754 ; gain = 0.000 ; free physical = 1566 ; free virtual = 11088
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.500. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 6ebe1d6b
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:22 . Memory (MB): peak = 4012.988 ; gain = 155.234 ; free physical = 1394 ; free virtual = 11039
+Phase 11 Incr Placement Change | Checksum: 218c96c21
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:04:07 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1393 ; free virtual = 11038
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 1eaec23b4
+
+Time (s): cpu = 00:08:26 ; elapsed = 00:04:22 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1366 ; free virtual = 11010
+Post Restoration Checksum: NetGraph: 14fbc3ae NumContArr: 21ad7a52 Constraints: 1b5fd518 Timing: 0
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: 52091318
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:04:24 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1309 ; free virtual = 10953
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: 52091318
+
+Time (s): cpu = 00:08:29 ; elapsed = 00:04:26 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1281 ; free virtual = 10925
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: a14c8a97
+
+Time (s): cpu = 00:08:30 ; elapsed = 00:04:27 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1255 ; free virtual = 10899
+ Number of Nodes with overlaps = 0
+
+Phase 13.4 Update Timing
+Phase 13.4 Update Timing | Checksum: 13a021862
+
+Time (s): cpu = 00:09:07 ; elapsed = 00:04:39 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1154 ; free virtual = 10803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.126 | TNS=-0.782 | WHS=-2.033 | THS=-4165.767|
+
+
+Phase 13.5 Update Timing for Bus Skew
+
+Phase 13.5.1 Update Timing
+Phase 13.5.1 Update Timing | Checksum: 12bac52d4
+
+Time (s): cpu = 00:09:33 ; elapsed = 00:04:45 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1128 ; free virtual = 10775
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.126 | TNS=-0.710 | WHS=N/A    | THS=N/A    |
+
+Phase 13.5 Update Timing for Bus Skew | Checksum: 17d81b148
+
+Time (s): cpu = 00:09:33 ; elapsed = 00:04:45 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1153 ; free virtual = 10801
+Phase 13 Router Initialization | Checksum: 1615afce9
+
+Time (s): cpu = 00:09:34 ; elapsed = 00:04:46 . Memory (MB): peak = 4012.988 ; gain = 181.234 ; free physical = 1128 ; free virtual = 10776
+
+Phase 14 Initial Routing
+Phase 14 Initial Routing | Checksum: 23b6704ed
+
+Time (s): cpu = 00:09:46 ; elapsed = 00:04:51 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 997 ; free virtual = 10735
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 1118
+ Number of Nodes with overlaps = 750
+ Number of Nodes with overlaps = 382
+ Number of Nodes with overlaps = 211
+ Number of Nodes with overlaps = 105
+ Number of Nodes with overlaps = 62
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.118 | WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: 1403f18fa
+
+Time (s): cpu = 00:11:11 ; elapsed = 00:05:41 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 654 ; free virtual = 10755
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 980
+ Number of Nodes with overlaps = 511
+ Number of Nodes with overlaps = 262
+ Number of Nodes with overlaps = 107
+ Number of Nodes with overlaps = 46
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.128 | TNS=-0.175 | WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 1473986c0
+
+Time (s): cpu = 00:11:42 ; elapsed = 00:05:58 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 755 ; free virtual = 10795
+Phase 15 Rip-up And Reroute | Checksum: 1473986c0
+
+Time (s): cpu = 00:11:42 ; elapsed = 00:05:58 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 755 ; free virtual = 10795
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: 130cae6f4
+
+Time (s): cpu = 00:11:50 ; elapsed = 00:06:00 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 750 ; free virtual = 10789
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.118 | WHS=N/A    | THS=N/A    |
+
+Phase 16.1 Delay CleanUp | Checksum: 1cd0eac47
+
+Time (s): cpu = 00:11:51 ; elapsed = 00:06:01 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 754 ; free virtual = 10794
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 1cd0eac47
+
+Time (s): cpu = 00:11:52 ; elapsed = 00:06:01 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 754 ; free virtual = 10793
+Phase 16 Delay and Skew Optimization | Checksum: 1cd0eac47
+
+Time (s): cpu = 00:11:52 ; elapsed = 00:06:01 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 754 ; free virtual = 10793
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 1ee5caea2
+
+Time (s): cpu = 00:11:59 ; elapsed = 00:06:03 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 762 ; free virtual = 10802
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.118 | WHS=0.014  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 1fceb7598
+
+Time (s): cpu = 00:12:00 ; elapsed = 00:06:04 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 761 ; free virtual = 10801
+Phase 17 Post Hold Fix | Checksum: 1fceb7598
+
+Time (s): cpu = 00:12:00 ; elapsed = 00:06:04 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 761 ; free virtual = 10801
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 1d2da7c86
+
+Time (s): cpu = 00:12:12 ; elapsed = 00:06:07 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 765 ; free virtual = 10805
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.039 | TNS=-0.118 | WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 1d2da7c86
+
+Time (s): cpu = 00:12:12 ; elapsed = 00:06:07 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 765 ; free virtual = 10805
+
+Phase 19 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 9.15242 %
+  Global Horizontal Routing Utilization  = 10.1179 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 87.3874%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X16Y153 -> INT_L_X16Y153
+South Dir 1x1 Area, Max Cong = 85.5856%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X41Y120 -> INT_R_X41Y120
+East Dir 1x1 Area, Max Cong = 88.2353%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X70Y282 -> INT_L_X70Y282
+   INT_L_X52Y152 -> INT_L_X52Y152
+West Dir 1x1 Area, Max Cong = 95.5882%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X112Y163 -> INT_L_X112Y163
+   INT_L_X112Y162 -> INT_L_X112Y162
+   INT_L_X112Y161 -> INT_L_X112Y161
+   INT_L_X108Y160 -> INT_L_X108Y160
+   INT_L_X112Y159 -> INT_L_X112Y159
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 0.333333 Sparse Ratio: 0.75
+
+Phase 19 Route finalize | Checksum: 1d2da7c86
+
+Time (s): cpu = 00:12:13 ; elapsed = 00:06:08 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 763 ; free virtual = 10803
+
+Phase 20 Verifying routed nets
+
+ Verification completed successfully
+Phase 20 Verifying routed nets | Checksum: 1d2da7c86
+
+Time (s): cpu = 00:12:13 ; elapsed = 00:06:08 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 759 ; free virtual = 10799
+
+Phase 21 Depositing Routes
+Phase 21 Depositing Routes | Checksum: 1aab3a579
+
+Time (s): cpu = 00:12:17 ; elapsed = 00:06:12 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 760 ; free virtual = 10799
+
+Phase 22 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.068  | TNS=0.000  | WHS=0.016  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 22 Post Router Timing | Checksum: 136964aa6
+
+Time (s): cpu = 00:12:45 ; elapsed = 00:06:17 . Memory (MB): peak = 4098.039 ; gain = 266.285 ; free physical = 848 ; free virtual = 10888
+INFO: [Route 35-16] Router Completed Successfully
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXN_IBUF[0]_inst at site IPAD_X1Y84 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXP_IBUF[0]_inst at site IPAD_X1Y85 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXN_OBUF[0]_inst at site OPAD_X0Y22 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXP_OBUF[0]_inst at site OPAD_X0Y23 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXN_IBUF[1]_inst at site IPAD_X1Y78 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXP_IBUF[1]_inst at site IPAD_X1Y79 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXN_OBUF[1]_inst at site OPAD_X0Y20 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXP_OBUF[1]_inst at site OPAD_X0Y21 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXN_IBUF[2]_inst at site IPAD_X1Y66 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXP_IBUF[2]_inst at site IPAD_X1Y67 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXN_OBUF[2]_inst at site OPAD_X0Y18 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXP_OBUF[2]_inst at site OPAD_X0Y19 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXN_IBUF[3]_inst at site IPAD_X1Y60 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_RXP_IBUF[3]_inst at site IPAD_X1Y61 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXN_OBUF[3]_inst at site OPAD_X0Y16 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-924] HDPC-01 Instance PCIE_TXP_OBUF[3]_inst at site OPAD_X0Y17 will not receive GSR during configuration. Its initial state will be unknown.
+WARNING: [Constraints 18-925] HDPC-02: To prevent the placer from using these sites that will not receive initialization, apply the following placer prohibit constraints: 
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y84 IPAD_X1Y84}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y85 IPAD_X1Y85}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y22 OPAD_X0Y22}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y23 OPAD_X0Y23}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y78 IPAD_X1Y78}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y79 IPAD_X1Y79}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y20 OPAD_X0Y20}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y21 OPAD_X0Y21}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y66 IPAD_X1Y66}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y67 IPAD_X1Y67}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y18 OPAD_X0Y18}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y19 OPAD_X0Y19}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y60 IPAD_X1Y60}]
+set_property PROHIBIT true [get_sites -range {IPAD_X1Y61 IPAD_X1Y61}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y16 OPAD_X0Y16}]
+set_property PROHIBIT true [get_sites -range {OPAD_X0Y17 OPAD_X0Y17}]
+
+
+Time (s): cpu = 00:13:08 ; elapsed = 00:06:36 . Memory (MB): peak = 4122.051 ; gain = 290.297 ; free physical = 1077 ; free virtual = 11153
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+189 Infos, 77 Warnings, 1 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:13:16 ; elapsed = 00:06:39 . Memory (MB): peak = 4122.051 ; gain = 290.297 ; free physical = 1077 ; free virtual = 11153
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4122.051 ; gain = 0.000 ; free physical = 1077 ; free virtual = 11153
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4122.051 ; gain = 0.000 ; free physical = 1022 ; free virtual = 11140
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:11 ; elapsed = 00:00:04 . Memory (MB): peak = 4122.051 ; gain = 0.000 ; free physical = 841 ; free virtual = 11124
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:22 ; elapsed = 00:00:17 . Memory (MB): peak = 4122.051 ; gain = 0.000 ; free physical = 1078 ; free virtual = 11176
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/ubuntu/Dev/xc7k420t/xc7k420t.runs/impl_2/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:46 ; elapsed = 00:00:13 . Memory (MB): peak = 4130.055 ; gain = 0.000 ; free physical = 873 ; free virtual = 10973
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Power 33-23] Power model is not available for startup_inst
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+202 Infos, 78 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:43 ; elapsed = 00:00:18 . Memory (MB): peak = 4202.090 ; gain = 72.035 ; free physical = 819 ; free virtual = 10928
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+Command: write_bitstream -force top.bit -bin_file
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k420t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k420t'
+Parsing TCL File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl] from IP /home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/pcie_7x_0.xci
+Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl]
+Finished Sourcing Tcl File [/home/ubuntu/Dev/xc7k420t/xc7k420t.srcs/sources_1/ip/pcie_7x_0/source/pcie_7x_0_create_bitstreams.tcl]
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC CFGBVS-7] CONFIG_VOLTAGE with Config Bank VCCO: The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 3.30.  However, the CONFIG_VOLTAGE for current_design is set to 2.5. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: R30 (IO_L1P_T0_D00_MOSI_14), T30 (IO_L1N_T0_D01_DIN_14), R28 (IO_L2P_T0_D02_14), T28 (IO_L2N_T0_D03_14), V29 (IO_L3P_T0_DQS_PUDC_B_14), and V26 (IO_L6P_T0_FCS_B_14)
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC FLBA-1] Area group tile alignment: PCIE_CLK_N_IBUF_inst_pblock_boot area group IPAD_X1Y71:IPAD_X1Y71 doesn't align with tile
+WARNING: [DRC FLBA-1] Area group tile alignment: PCIE_CLK_P_IBUF_inst_pblock_boot area group IPAD_X1Y70:IPAD_X1Y70 doesn't align with tile
+WARNING: [DRC FLBO-1] Pblock overlap: pcie_7x_0_main_pblock_boot overlaps with PCIE_CLK_N_IBUF_inst_pblock_boot, pcie_refclk_ibuf_pblock_boot, and PCIE_CLK_P_IBUF_inst_pblock_boot :  0.21%  0.21%  0.21% .
+WARNING: [DRC PDRC-153] Gated clock check: Net eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_tlp_rq_inst/tlp_wr_avail_reg_i_2_n_0 is a gated clock net sourced by a combinational pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_tlp_rq_inst/tlp_wr_avail_reg_i_2/O, cell eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_tlp_rq_inst/tlp_wr_avail_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/gtx_rxusrclk2_ce_reg is a gated clock net sourced by a combinational pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/slip_count_reg[4]_i_4/O, cell genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/slip_count_reg[4]_i_4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/gtx_txusrclk2_ce_reg is a gated clock net sourced by a combinational pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3/O, cell genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/gtx_txusrclk2_ce_reg is a gated clock net sourced by a combinational pin genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__0/O, cell genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/gtx_rx_clk is a gated clock net sourced by a combinational pin genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__0/O, cell genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/gtx_txusrclk2_ce_reg is a gated clock net sourced by a combinational pin genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__1/O, cell genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/gtx_rx_clk is a gated clock net sourced by a combinational pin genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__1/O, cell genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/gtx_txusrclk2_ce_reg is a gated clock net sourced by a combinational pin genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__2/O, cell genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/gtx_rx_clk is a gated clock net sourced by a combinational pin genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__2/O, cell genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/slip_count_reg[4]_i_4 is driving clock pin of 1095 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/FSM_sequential_state_reg_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/FSM_sequential_state_reg_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[10], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[11], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[12], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[13], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[14], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[15], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[16], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[17], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[18], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[19], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[20]... and (the first 15 of 1095 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3 is driving clock pin of 779 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1]... and (the first 15 of 779 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__0 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1]... and (the first 15 of 763 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__0 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2]... and (the first 15 of 17 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__1 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1]... and (the first 15 of 763 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__1 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2]... and (the first 15 of 17 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__2 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1]... and (the first 15 of 763 listed)
+WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__2 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2]... and (the first 15 of 17 listed)
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[6] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[7] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[0] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[1] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[2] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[3] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2/ENBWREN (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_axis_tready) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/ENARDEN (net: ila_cache_inst/valid) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_6) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/RSTRAMB (net: ila_cache_inst/index[10]_i_1_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg_replica_7) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 25 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, ila_0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], ila_0_inst/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14]... and (the first 15 of 23 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 59 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+INFO: [Designutils 12-2358] Enabled Tandem boot bitstream.
+Creating bitmap...
+Creating bitstream...
+Tandem stage1 bitstream contains 15734560 bits.
+Tandem stage2 bitstream contains 62168032 bits.
+Writing bitstream ./top.bit...
+Writing bitstream ./top.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+222 Infos, 138 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:35 ; elapsed = 00:00:44 . Memory (MB): peak = 4539.090 ; gain = 337.000 ; free physical = 845 ; free virtual = 10813
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 20 21:50:37 2023...

@@ -1,0 +1,295 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Jun 20 21:38:00 2023
+| Host         : ubuntu running 64-bit Ubuntu 22.04.2 LTS
+| Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+| Design       : top
+| Device       : xc7k420tffg901-2L
+| Speed File   : -2L
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 49
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CFGBVS-7    | Warning  | CONFIG_VOLTAGE with Config Bank VCCO                        | 1          |
+| CHECK-3     | Warning  | Report rule limit reached                                   | 1          |
+| FLBA-1      | Warning  | Area group tile alignment                                   | 2          |
+| FLBO-1      | Warning  | Pblock overlap                                              | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 8          |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| REQP-1840   | Warning  | RAMB18 async control check                                  | 16         |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-7#1 Warning
+CONFIG_VOLTAGE with Config Bank VCCO  
+The CONFIG_MODE property of current_design specifies a configuration mode (SPIx4) that uses pins in bank 14.  I/O standards used in this bank have a voltage requirement of 3.30.  However, the CONFIG_VOLTAGE for current_design is set to 2.5. If you're using any config pins in this bank, ensure that your configuration voltage is compatible with the I/O standards in banks used by your configuration mode.  Refer to device configuration user guide for more information.    Pins used by config mode: R30 (IO_L1P_T0_D00_MOSI_14), T30 (IO_L1N_T0_D01_DIN_14), R28 (IO_L2P_T0_D02_14), T28 (IO_L2N_T0_D03_14), V29 (IO_L3P_T0_DQS_PUDC_B_14), and V26 (IO_L6P_T0_FCS_B_14)
+Related violations: <none>
+
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+FLBA-1#1 Warning
+Area group tile alignment  - PBlock:PCIE_CLK_N_IBUF_inst_pblock_boot
+PCIE_CLK_N_IBUF_inst_pblock_boot area group IPAD_X1Y71:IPAD_X1Y71 doesn't align with tile
+Related violations: <none>
+
+FLBA-1#2 Warning
+Area group tile alignment  - PBlock:PCIE_CLK_P_IBUF_inst_pblock_boot
+PCIE_CLK_P_IBUF_inst_pblock_boot area group IPAD_X1Y70:IPAD_X1Y70 doesn't align with tile
+Related violations: <none>
+
+FLBO-1#1 Warning
+Pblock overlap  - PBlock:pcie_7x_0_main_pblock_boot
+pcie_7x_0_main_pblock_boot overlaps with PCIE_CLK_N_IBUF_inst_pblock_boot, pcie_refclk_ibuf_pblock_boot, PCIE_CLK_P_IBUF_inst_pblock_boot :  0.21%  0.21%  0.21% .
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/adapter_inst/slip_count_reg[4]_i_4 is driving clock pin of 1095 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/FSM_sequential_state_reg_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/FSM_sequential_state_reg_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[10], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[11], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[12], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[13], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[14], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[15], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[16], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[17], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[18], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[19], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_rx_inst/crc_state3_reg[20] (the first 15 of 1095 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3 is driving clock pin of 779 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1] (the first 15 of 779 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#3 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__0 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[1].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1] (the first 15 of 763 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#4 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__0 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[1].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2] (the first 15 of 17 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#5 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__1 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[2].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1] (the first 15 of 763 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#6 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__1 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[2].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2] (the first 15 of 17 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#7 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/adapter_inst/encoded_tx_data_reg[63]_i_3__2 is driving clock pin of 763 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[0], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[1], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/FSM_sequential_state_reg_reg[2], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[0], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[10], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[11], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[12], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[13], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[14], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[15], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[16], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[17], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[18], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[19], genblk1[3].mac_adapter_inst/eth_mac_10g_fifo_inst/eth_mac_10g_inst/axis_xgmii_tx_inst/crc_state_reg[1] (the first 15 of 763 listed)
+Related violations: <none>
+
+PLHOLDVIO-2#8 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg[4]_i_4__2 is driving clock pin of 17 cells. This could lead to large hold time violations. Involved cells are:
+genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/rx_block_lock_reg_reg, genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/serdes_rx_bitslip_reg_reg, genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[2], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[3], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[4], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_count_reg_reg[5], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[2], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/sh_invalid_count_reg_reg[3], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[0], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[1], genblk1[3].mac_adapter_inst/eth_phy_10g_inst/eth_phy_10g_rx_inst/eth_phy_10g_rx_if_inst/eth_phy_10g_rx_frame_sync_inst/slip_count_reg_reg[2] (the first 15 of 17 listed)
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_0/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_1/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[6] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_0/WEBWE[7] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/eth_virtio_cmd_rx_inst/axis_fifo_inst/mem_reg_0_i_1__10_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[0].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[2].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[4].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk1[6].eth_virtio_pkt_rx_inst/axis_fifo_inst/read0_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[1].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[3].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[5].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2 has an input control pin eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/mem_reg_2/ENARDEN (net: eth_virtio_wrapper_inst/eth_virtio_vq_inst/genblk2[7].eth_virtio_pkt_tx_inst/axis_fifo_inst/read3_out) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[0] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[1] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[2] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/mem_reg_2/WEBWE[3] (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/WEBWE[0]) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/rx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2 has an input control pin genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/mem_reg_2/ENBWREN (net: genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_axis_tready) which is driven by a register (genblk1[0].mac_adapter_inst/eth_mac_10g_fifo_inst/tx_fifo/fifo_inst/s_rst_sync3_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/ENARDEN (net: ila_cache_inst/valid) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 ila_cache_inst/cache_reg_22 has an input control pin ila_cache_inst/cache_reg_22/RSTRAMB (net: ila_cache_inst/index[10]_i_1_n_0) which is driven by a register (eth_virtio_wrapper_inst/pcie_axi_wrapper_inst/pcie_wrapper_inst/pcie_7x_0_inst/inst/inst/user_reset_out_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+
